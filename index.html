@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BINA | Niveles</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main id="pantallaNiveles" class="pantalla activa">
+  <header class="encabezado">
+    <div class="marca">BINA</div>
+    <p class="etiqueta">BIBLIOTECA NACIONAL</p>
+    <h1>Explora los niveles</h1>
+    <p class="subtitulo">Descubre los espacios, servicios y experiencias de cada nivel.</p>
+  </header>
+  <section id="listaNiveles" class="grid-niveles"></section>
+</main>
+
+<main id="pantallaInformacion" class="pantalla pantalla-info">
+  <button id="btnRegresar" class="btn-regresar"><span>←</span><span>Regresar</span></button>
+  <section class="contenido-nivel">
+    <div class="cabecera-nivel">
+      <div class="numero-nivel">NIVEL <span id="numeroNivel">01</span></div>
+      <div id="edadNivel" class="edad-nivel"></div>
+    </div>
+    <h2 id="tituloNivel">Nivel</h2>
+    <div class="linea"></div>
+    <p id="descripcionNivel" class="descripcion"></p>
+
+    <section class="video-nivel" aria-label="Video del nivel">
+      <div class="video-nivel-cabecera">
+        <div>
+          <span class="video-nivel-etiqueta">VIDEO DEL NIVEL</span>
+          <h3 id="tituloVideoNivel">Presentación del nivel</h3>
+        </div>
+      </div>
+      <div id="contenedorVideoNivel" class="contenedor-video"></div>
+    </section>
+
+    <h3 class="titulo-seccion">Espacios y experiencias</h3>
+    <div id="informacionExtra" class="informacion-extra"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
